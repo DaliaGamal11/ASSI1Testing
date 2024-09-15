@@ -1,0 +1,46 @@
+                                                                  -----------------------   
+                                                                  |   Bug Report   |
+                                                                  ------------------------ 
+   method:- testQuarterParameterizedCtor()
+   test Cases :- int date =-1 , int year =2022;
+   status: pass 
+   BUG: the system should give an exception or fail as its range of quarters starts from 1 to 4 
+   severity: major
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+   mehtod :testQuarterDateZoneCtor()
+   test cases: two Quarter object have different Date but same timeZone are Not EQUAL 
+   status:fail 
+   BUG : method does not creates Quarter objects that represent the same quarter regardless of the time zone.
+   severity: minor
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+   method:testGetSerialIndex()
+   testcase : expected Serial index = year*4+quarter 
+   status : pass
+   BUG:- not specifies how the the index is calculated or whats the formula so i had to guess the formula 
+   severity: Trivial
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+   method: testParseQuarterFOrNull()
+   testcase: StringtoBeParsed="2023-Q5" expected should be =null.
+   status: fail
+   BUG: the qaurter is out of range the output should be null ormethod fail
+   severity:minor 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+   method: testGetFirstMillisecondForNull()
+   testcase: Calender=NUll 
+   status: fail
+   BUG: method gives NullPointerException method doesnt handle null values , and weak documentation as not specified how method handles null
+   severity:minor 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+   method: testGetFirstMillisecondForNull()
+   testcase: Calender=NUll 
+   status: fail
+   BUG: method gives NullPointerException method doesnt handle null values , and weak documentation as not specified how method handles null
+   severity:minor 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
